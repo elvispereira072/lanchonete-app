@@ -1,0 +1,357 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: white;
+}
+
+form {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: red;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+input[type="submit"] {
+  background-color: blue;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+}
+
+input[type="submit"]:hover {
+  background-color:;
+}
+
+#video-background {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -1000;
+  background-size: cover;
+}
+
+#video-content {
+  position: relative;
+  z-index: 1;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  /* Centraliza o conteúdo */
+}
+
+.rating {
+  display: inline-block;
+}
+
+.rating input {
+  display: none;
+}
+
+.rating label {
+  font-size: 25px;
+  color: #ddd;
+  /* Cor padrão das estrelas */
+  cursor: pointer;
+}
+
+/* Estrelas preenchidas */
+.rating input:checked~label:before {
+  content: '\2605';
+  /* Código Unicode para estrela preenchida */
+  fill: #ffcc00;
+  /* Cor das estrelas preenchidas (amarelo) */
+}
+
+h1 {
+  color: orangered;
+}
+
+h2 {
+  color: black;
+}
+
+#sidebar.active {
+  border-color: blue;
+  /* altera a cor da borda quando a classe 'active' é aplicada */
+}
+
+
+.social-media {
+  text-align: center;
+  /* Alinha as imagens ao centro */
+}
+
+.social-media a {
+  display: inline-block;
+  /* Exibe os links como elementos em linha */
+  margin: 0 10px;
+  /* Adiciona margem entre as imagens */
+}
+
+.social-media img {
+  max-width: 50px;
+  height: auto;
+}
+
+.descontos {
+  background-color: #f2f2f2;
+  padding: 20px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.descontos h3 {
+  color: black;
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.descontos p {
+  color: black;
+  font-size: 1.1em;
+  line-height: 1.6;
+}
+
+.horário-de-abertura {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.horário-de-abertura h3 {
+  color: #333;
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.horário-de-abertura p {
+  color: #666;
+  font-size: 1.1em;
+  line-height: 1.6;
+}
+
+/* Estilo para o botão do menu */
+.menu-btn {
+  position: fixed;
+  /* Permite que o botão fique fixo na tela */
+  top: 20px;
+  /* Distância do topo */
+  left: 20px;
+  /* Distância da esquerda */
+  z-index: 999;
+  /* Garante que o botão esteja na frente de outros elementos */
+  background: transparent;
+  /* Cor de fundo transparente */
+  border: none;
+  /* Remove a borda */
+  cursor: pointer;
+  /* Altera o cursor para indicar que é clicável */
+}
+
+/* Estilo para o menu */
+.menu {
+  position: fixed;
+  /* Permite que o menu fique fixo na tela */
+  top: 0;
+  /* Define a distância do topo como 0 */
+  left: 0;
+  /* Define a posição do lado esquerdo */
+  background-color: #f4f4f4;
+  /* Cor de fundo do menu */
+  padding: 20px;
+  /* Espaçamento interno do menu */
+  width: 200px;
+  /* Largura do menu */
+  height: 100%;
+  /* Altura do menu para cobrir toda a tela */
+  z-index: 998;
+  /* Certifica-se de que o menu esteja atrás do botão */
+  transform: translateX(-100%);
+  /* Inicialmente esconde o menu à esquerda */
+  transition: transform 0.3s ease;
+  /* Adiciona uma transição suave para o efeito de deslizamento */
+}
+
+/* Estilo para os itens do menu */
+.menu li {
+  list-style: none;
+  /* Remove os marcadores de lista */
+  margin-bottom: 10px;
+  /* Adiciona margem inferior para separar os itens */
+}
+
+/* Estilo para os links do menu */
+.menu li a {
+  text-decoration: none;
+  /* Remove sublinhado dos links */
+  color: #333;
+  /* Cor do texto */
+}
+
+.menu-item {
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  /* Alinha o texto à esquerda */
+}
+
+.menu-item img {
+  max-width: 100%;
+  /* Garante que a imagem não ultrapasse a largura máxima do contêiner */
+  height: auto;
+  display: block;
+  /* Remove margens verticais */
+  margin: 0 auto 10px;
+  /* Centraliza a imagem e adiciona uma margem inferior */
+}
+
+.menu-item h3 {
+  margin-top: 10px;
+}
+
+.menu-item p {
+  color: black;
+}
+
+.cta-button {
+  display: block;
+  width: 200px;
+  margin: 20px auto;
+  padding: 10px 20px;
+  text-align: center;
+  color: #fff;
+  background-color: red;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.cta-button:hover {
+  background-color: blue;
+}
+
+footer {
+  text-align: center;
+  margin-top: 40px;
+}
+
+footer p {
+  color: black;
+  font-size: 14px;
+}
+
+#sidebar {
+  position: absolute;
+  top: 50px;
+  right: 10px;
+  display: none;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+#sidebar.active {
+  display: block;
+}
+
+/* Estilos para o formulário de contato */
+#contact form {
+  background-color: #f4f4f4;
+  /* Cor de fundo do formulário */
+  padding: 20px;
+  /* Espaçamento interno */
+  border-radius: 10px;
+  /* Borda arredondada */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  /* Sombra suave */
+}
+
+/* Estilos para os rótulos */
+#contact form label {
+  display: block;
+  /* Exibir em bloco */
+  margin-bottom: 5px;
+  /* Espaçamento inferior */
+  color: black;
+  /* Cor do rótulo roxo */
+}
+
+/* Estilos para os campos de entrada */
+#contact form input[type="text"],
+#contact form input[type="email"],
+#contact form input[type="tel"],
+#contact form input[type="file"],
+#contact form textarea {
+  width: 100%;
+  /* Largura total */
+  padding: 10px;
+  /* Espaçamento interno */
+  margin-bottom: 10px;
+  /* Espaçamento inferior */
+  border: 1px solid red;
+  /* Borda roxa */
+  border-radius: 5px;
+  /* Borda arredondada */
+  box-sizing: border-box;
+  /* Incluir preenchimento e borda na largura */
+}
+
+/* Estilos para o botão de envio */
+#contact form button[type="submit"] {
+  background-color: red;
+  /* Cor de fundo roxa */
+  color: #fff;
+  /* Cor do texto branca */
+  padding: 10px 20px;
+  /* Espaçamento interno */
+  border: none;
+  /* Sem borda */
+  border-radius: 5px;
+  /* Borda arredondada */
+  cursor: pointer;
+  /* Cursor de apontar */
+  transition: background-color 0.3s ease;
+  /* Transição suave */
+}
+
+/* Estilos para o botão de envio ao passar o mouse */
+#contact form button[type="submit"]:hover {
+  background-color: blue;
+  /* Cor de fundo roxa escura ao passar o mouse */
+}

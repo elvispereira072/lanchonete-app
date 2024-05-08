@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snacks</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="app.js">
+    <script src="script.js"></script> 
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<head>
+    <script src="script.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <h1 class="site-title"></h1>
+    </header>
+
+    <button class="menu-btn" onclick="toggleMenu()">
+        <i class="material-icons">menu</i>
+    </button>
+
+    <video autoplay muted loop id="video-background">
+        <source src="assets/" type="video/mp4">
+        Your browser does not support HTML5 video.
+    </video>
+
+    <nav id="sidebar">
+        <ul>
+            <li><a href="sobre-nós.html">About Us</a></li>
+            <li><a href="lanches.html">Snacks</a></li>
+            <li><a href="bebidas.html">Drinks</a></li>
+            <li><a href="churrasco.html">Barbecue</a></li>
+            <li><a href="contato.html">Contact</a></li>
+            <li><a href="https://wa.me/13981430940">Whatsapp</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="menu-item">
+            <h1>Welcome to our page.</h1>
+            <p>Made with a unique combination of flavors and textures, it is a real temptation!</p>
+            <img src="assets/2.jpeg" alt="Lanche1">
+            <p>The perfect blend of fresh, flavorful ingredients - it's simply irresistible!</p>
+            <p>The quality of the fresh ingredients combined in this snack is simply irresistible, providing a unique
+                and memorable gastronomic experience.</p>
+                <p>Price: R$ 15.00</p>
+                <p>Discount: 0%</p>
+                <p>Discounted price: R$ 15.00</p>
+                <a href="https://api.whatsapp.com/send?phone=13981430940&text=Hello! I would like to place an order."
+                class="cta-button">Buy Now</a>
+            </div>
+
+        <div class="menu-item">
+            <h1>Mc Donald</h1>
+            <img src="assets/3.jpeg" alt="Lanche2">
+            <p>Descrição do prato. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <p>Price: R$ 19.99</p>
+            <p>Discount: 10%</p>
+            <p>Discounted price: R$17.99</p>
+            <a href="https://api.whatsapp.com/send?phone=13981430940&text=Hello! I would like to place an order."
+            class="cta-button">Buy Now</a>
+        </div>
+
+        <div class="menu-item">
+            <h1>Delicious snacks with the best ingredients.</h1>
+            <img src="assets/4.webp" alt="Lanche3">
+            <p>Made with the highest quality ingredients, this dish is an ode to gastronomic perfection.</p>
+            <p>The quality of the fresh ingredients combined in this snack is simply irresistible, providing a unique
+                and memorable gastronomic experience.</p>
+                <p>Price: R$ 25.00</p>
+                <p>Discount: 5%</p>
+                <p>Discounted price: R$23.75</p>
+                <a href="https://api.whatsapp.com/send?phone=13981430940&text=Hello! I would like to place an order."
+                class="cta-button">Buy Now</a>
+            </div>
+
+        <div class="menu-item">
+            <h1>Best ingredients.</h1>
+            <img src="assets/1.jpeg" alt="Lanche4">
+            <p>Made with the highest quality ingredients, this dish is an ode to gastronomic perfection.</p>
+            <p>The quality of the fresh ingredients combined in this snack is simply irresistible, providing a unique
+                and memorable gastronomic experience.</p>
+                <p>Price: R$ 12.00</p>
+                <p>Discount: 0%</p>
+                <p>Discounted price: R$ 12.00</p>
+                <a href="https://api.whatsapp.com/send?phone=13981430940&text=Hello! I would like to place an order."
+                class="cta-button">Buy Now</a>
+            </div>
+
+        <div class="menu-item">
+            <h1>Refreshing Summer Drink</h1>
+            <img src="assets/7.webp" alt="Bebida3">
+            <p>A refreshing drink perfect for hot summer days.</p>
+            <p>Made with fresh fruits and natural ingredients, this drink will refresh you with every sip.</p>
+            <p>Price: R$ 8.50</p>
+            <p>Discount: 0%</p>
+            <p>Discounted price: R$8.50</p>
+            <a href="https://api.whatsapp.com/send?phone=13981430940&text=Hello! I would like to place an order."
+            class="cta-button">Buy Now</a>
+        </div>
+
+        <div class="menu-item">
+            <h1>Natural Energy</h1>
+            <img src="assets/8.webp" alt="Bebida4">
+            <p>A natural energy drink to give you a boost of energy throughout the day.</p>
+            <p>Made with healthy and invigorating ingredients, this drink will keep you alert and active.</p>
+            <p>Price: R$ 10.00</p>
+            <p>Discount: 0%</p>
+            <p>Discounted price: R$ 10.00</p>
+            <a href="https://api.whatsapp.com/send?phone=13981430940&text=Hello! I would like to place an order."
+            class="cta-button">Buy Now</a>
+        </div>
+
+        <div class="menu-item">
+            <h1>Tropical Fruit Smoothie</h1>
+            <img src="assets/9.webp" alt="Bebida5">
+            <p>A delicious and nutritious smoothie, made with an exotic blend of tropical fruits.</p>
+            <p>Refreshing and full of vitamins, this smoothie is the perfect choice for a dose of natural energy.</p>
+            <p>Price: R$ 7.00</p>
+            <p>Discount: 0%</p>
+            <p>Discounted price: R$7.00</p>
+            <a href="https://api.whatsapp.com/send?phone=13981430940&text=Hello! I would like to place an order."
+            class="cta-button">Buy Now</a>
+        </div>
+
+        <div class="menu-item">
+            <h1>Smoked Pork Ribs</h1>
+            <img src="assets/15.jpeg" alt="Churrasco3">
+            <p>A succulent smoked pork rib, prepared slowly to enhance flavor and texture.</p>
+            <p>With an irresistible smoky touch, this rib is a delight for barbecue lovers.</p>
+            <p>Price: R$ 25.00</p>
+            <p>Discount: 0%</p>
+            <p>Discounted price: R$ 25.00</p>
+            <a href="https://api.whatsapp.com/send?phone=13981430940&text=Hello! I would like to place an order."
+            class="cta-button">Buy Now</a>
+        </div>
+
+        <div class="menu-item">
+            <h1>Grilled Argentine Picanha</h1>
+            <img src="assets/14.webp" alt="Churrasco4">
+            <p>The famous grilled Argentine picanha, with its unmistakable flavor and incomparable succulence.</p>
+            <p>Prepared with the finest cuts and grilled to perfection, this picanha will conquer your taste buds.</p>
+            <p>Price: R$ 35.00</p>
+            <p>Discount: 5%</p>
+            <p>Discounted price: R$33.25</p>
+            <a href="https://api.whatsapp.com/send?phone=13981430940&text=Hello! I would like to place an order."
+            class="cta-button">Buy Now</a>
+        </div>
+
+        <div class="menu-item">
+            <h1>Rump Marinated with Herbs</h1>
+            <img src="assets/13.jpeg" alt="Churrasco5">
+            <p>Juicy rump marinated in a mixture of fresh herbs, resulting in a unique and aromatic flavor.</p>
+            <p>This rump is a delicious option for those looking for a barbecue with a touch of sophistication.</p>
+            <p>Price: R$ 30.00</p>
+            <p>Discount: 0%</p>
+            <p>Discounted price: R$ 30.00</p>
+            <a href="https://api.whatsapp.com/send?phone=13981430940&text=Hello! I would like to place an order."
+            class="cta-button">Buy Now</a>
+        </div>
+
+        <div class="menu-item">
+            <h1>Coca-Cola Soda</h1>
+            <img src="assets/coca.webp" alt="Coca-Cola">
+            <p>Cool off with classic Coca-Cola, made with high-quality ingredients for an unparalleled refreshing
+                experience.</p>
+            <p>Enjoy the iconic taste and impeccable quality that make Coca-Cola a favorite choice around the world.</p>
+            <p>Price: R$ 5.00</p>
+            <p>Discount: 0%</p>
+            <p>Discounted price: R$5.00</p>
+            <a href="https://api.whatsapp.com/send?phone=13981430940&text=Hello! I would like to place an order."
+            class="cta-button">Buy Now</a>
+        </div>
+        <br>
+
+        <div class="special-offers">
+            <h1>"Special Offers"</h1>
+            <br>
+            <div class="offer-item">
+                <h3>Weekend Special: 20% Off</h3>
+                <p>Enjoy a 20% discount on all orders placed during weekends. Don't miss out on this limited-time offer!</p>
+                <br>
+            </div>
+
+            <div class="offer-item">
+                <h3>Combo Deal: Burger + Fries</h3>
+                <p>Get a delicious burger with a side of crispy fries for only R$ 20.00. Perfect for a quick meal!</p>
+                <br>
+            </div>
+
+            <div class="offer-item">
+                <h3>Happy Hour: Buy One, Get One Free</h3>
+                <p>Join us for happy hour every weekday from 5 PM to 7 PM and enjoy a buy one, get one free offer on selected items.</p>
+                <br>
+                <br>
+
+    <div class="faq-section">
+        <h2>FAQ (Frequently Asked Questions)</h2>
+        <br>
+        <div class="faq-item">
+            <h3>What payment methods do you accept?</h3>
+            <p>We accept payments via credit card, PayPal, and bank transfer.</p>
+            <br>
+        </div>
+
+        <div class="faq-item">
+            <h3>Do you offer international shipping?</h3>
+            <p>Yes, we offer international shipping to select countries. Please contact us for more information.</p>
+            <br>
+        </div>
+
+        <div class="faq-item">
+            <h3>What is your return policy?</h3>
+            <p>Our return policy allows for returns within 30 days of purchase. Please see our Returns page for more information.</p>
+            <br>
+        </div>
+    </div>
+
+    <script>
+        function toggleMenu() {
+            var sidebar = document.getElementById('sidebar');
+            sidebar.classList.toggle('active');
+        }
+    </script>
+
+    <div class="testimonials">
+        <h2>Testimonials</h2>
+
+        <div class="testimonial">
+            <p><em>— Maria S., Happy Customer</em></p>
+            <p>"The cakes at this bakery are simply divine! I recommend them to all my friends."</p>
+            <br>
+        </div>
+
+        <div class="testimonial">
+            <p><em>— João P., Pie Fan</em></p>
+            <p>"Best pies I've ever had! I can't wait to order another one."</p>
+            <br>
+        </div>
+
+        <div class="testimonial">
+            <p><em>— Ana R., Sweets Lover</em></p>
+            <p>"The sweets are irresistible! Every bite is an explosion of flavor."</p>
+            <br>
+        </div>
+
+        <div class="testimonial">
+            <p><em>— Carlos M., Satisfied Customer</em></p>
+            <p>"The personalized cakes exceeded my expectations! Beautiful and delicious."</p>
+            <br>
+        </div>
+
+        <div class="testimonial">
+            <p><em>— Laura T., Pie Admirer</em></p>
+            <p>"Fresh and very tasty pies! I will definitely be back to try other flavors."</p>
+            <br>
+        </div>
+
+        <div class="testimonial">
+            <p><em>— Sofia L., Passionate about Cakes</em></p>
+            <p>"The pastry shop at this place is simply incredible! The cakes are a true work of art, both visually and
+                in flavor. I recommend it to everyone looking for a gastronomic experience only."</p>
+        </div>
+
+        <div class="testimonial">
+            <p><em>— Pedro C., Confectionery Lover</em></p>
+            <p>"The sweets at this bakery are an irresistible temptation! Each piece is an explosion of delicious
+                flavors. I've tried several and I'm always delighted with the quality and variety offered."</p>
+            <br>
+        </div>
+    </div>
+
+    <form action="https://api.staticforms.xyz/submit" method="post">
+        <input type="text" name="name" placeholder="Your Name">
+        <input type="email" name="email" placeholder="Your Email" required>
+        <input type="text" name="phone" placeholder="Your Phone">
+        <input type="text" name="company" placeholder="Your Company">
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <input type="text" name="honeypot" style="display:none">
+        <input type="hidden" name="accessKey" value="11d0b5ed-df07-4c34-ad75-45ea3e034c56">
+        <input type="hidden" name="subject" value="Contact Form Submission">
+        <input type="hidden" name="replyTo" value="">
+        <input type="hidden" name="redirectTo" value="https://example.com/contact/success">
+        <input type="submit" value="Submit">
+    </form>
+    
+    <div class="rating">
+        <input type="radio" id="star10" name="rating" value="10">
+        <label for="star10">&#9733;</label>
+        <input type="radio" id="star9" name="rating" value="9">
+        <label for="star9">&#9733;</label>
+        <input type="radio" id="star8" name="rating" value="8">
+        <label for="star8">&#9733;</label>
+        <input type="radio" id="star7" name="rating" value="7">
+        <label for="star7">&#9733;</label>
+        <input type="radio" id="star6" name="rating" value="6">
+        <label for="star6">&#9733;</label>
+        <input type="radio" id="star5" name="rating" value="5">
+        <label for="star5">&#9733;</label>
+        <input type="radio" id="star4" name="rating" value="4">
+        <label for="star4">&#9733;</label>
+        <input type="radio" id="star3" name="rating" value="3">
+        <label for="star3">&#9733;</label>
+        <input type="radio" id="star2" name="rating" value="2">
+        <label for="star2">&#9733;</label>
+        <input type="radio" id="star1" name="rating" value="1">
+        <label for="star1">&#9733;</label>
+        <input type="radio" id="star2" name="rating" value="2">
+        <label for="star2">&#9733;</label>
+        <input type="radio" id="star1" name="rating" value="1">
+        <label for="star1">&#9733;</label>
+        <input type="radio" id="star2" name="rating" value="2">
+        <label for="star2">&#9733;</label>
+        <input type="radio" id="star1" name="rating" value="1">
+        <label for="star1">&#9733;</label>
+        <input type="radio" id="star2" name="rating" value="2">
+        <label for="star2">&#9733;</label>
+        <input type="radio" id="star1" name="rating" value="1">
+        <label for="star1">&#9733;</label>
+        <input type="radio" id="star2" name="rating" value="2">
+        <label for="star2">&#9733;</label>
+        <input type="radio" id="star1" name="rating" value="1">
+        <label for="star1">&#9733;</label>
+        <input type="radio" id="star2" name="rating" value="2">
+        <label for="star2">&#9733;</label>
+        <input type="radio" id="star1" name="rating" value="1">
+        <label for="star1">&#9733;</label>
+        <br>
+        <br>
+    </div>
+    
+    <div class="social-media">
+        <h2>"Social Média"</h2>
+        <a href="https://facebook.com/seductive-delights"><img src="assets/facebook.webp" alt="Facebook"></a>
+        <a href="https://instagram.com/seductive-delights"><img src="assets/instragam.webp" alt="Instagram"></a>
+        <a href="https://twitter.com/seductive-delights"><img src="assets/twitter.webp" alt="Twitter"></a>
+        <a href="https://whats.com/seductive-delights"><img src="assets/whats.webp" alt="WhatsApp"></a>
+        <a href="https://linkedin.com/seductive-delights"><img src="assets/linkedin.webp" alt="LinkedIn"></a>
+        <a href="https://youtube.com/seductive-delights"><img src="assets/youtube.webp" alt="YouTube"></a>
+        <a href="https://telegram.com/seductive-delights"><img src="assets/telegram.webp" alt="Telegram"></a>
+        <a href="https://spotify.com/seductive-delights"><img src="assets/Spotify.webp" alt="Spotify"></a>
+        <a href="https://messenger.com/seductive-delights"><img src="assets/messenger.webp" alt="Messenger"></a>
+        <br>
+        <br>
+        <br>
+    </div>
+
+    <div class="descontos">
+        <h3>Discounts</h3>
+        <p>We offer special discounts on selected items every week. Don't miss it!</p>
+        <br>
+        <br>
+    </div>
+
+    <div class="horário de abertura">
+        <h3>Opening hours</h3>
+        <p>Monday to Saturday: 9am to 8pm</p>
+    </div>
+    </footer>
+
+    <footer>
+        <p>&copy; 2024 Snacks, Juices. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>
